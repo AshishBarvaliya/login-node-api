@@ -23,4 +23,9 @@ app.listen(process.env.PORT, () => {
   console.log(`server has started at port ${process.env.PORT}`);
 });
 
+app.use("/", (req, res) => {
+  res.send("Welcome to log-in node api")
+});
+
+//routes
 app.use("/users", usersRouter);
