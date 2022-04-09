@@ -23,4 +23,4 @@ app.listen(process.env.PORT, () => {
   console.log(`server has started at port ${process.env.PORT}`);
 });
 
-app.use("/users", usersRouter);
+app.use("/", usersRouter);
