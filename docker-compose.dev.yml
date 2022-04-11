@@ -1,6 +1,7 @@
 version: "3"
 services:
   node-app:
+    image: ashishbarvaliya/node-api-dev
     build:
       context: .
       args:
